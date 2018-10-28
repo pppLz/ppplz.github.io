@@ -1,0 +1,29 @@
+# ----------- CONFIGURABLE START -----------
+title:            "轻轻小世界"
+description:      "欢迎来到 轻轻小世界 轻轻浏览 慢慢享受。"
+url:              https://ppplz.github.io # 域名
+signoff:          "PPPLZ" # Your name
+facebook_appid:   #ppplz
+google_analytics: #UA-101222464-1
+share:            true 
+# 分页
+paginate: 15
+paginate_path: "ppplzpage:num"
+gems: [jekyll-paginate]
+links:
+  - name:         首页
+    url:          /
+    external:     false
+  - name:         西东
+    url:          /item
+    external:     false
+  - name:         标签
+    url:          /tags
+    external:     false
+# ------------ CONFIGURABLE END ------------
+
+#permalink:        /:categories/:title.html
+permalink: /:year/:month/:day/:title.html
+defaults:
+  - values:
+      layout: "default"
